@@ -40,4 +40,4 @@ JOKES = [
 
 def joke_generator(request):
     joke = random.choice(JOKES)
-    return render(request, 'joke.html', {'joke': joke})
+    return render(request, 'index.html', {'joke': joke})
